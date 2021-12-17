@@ -1,1 +1,259 @@
-(function(c,d){const e=c();function v(c,d){return b(c-'0x3a0',d);}while(!![]){try{const f=parseInt(v(0x4d4,'0x4df'))/0x1*(-parseInt(v(0x4dc,0x4db))/0x2)+parseInt(v(0x4d3,'0x4c3'))/0x3*(parseInt(v('0x4d5','0x4e7'))/0x4)+parseInt(v('0x4c5',0x4b8))/0x5*(parseInt(v(0x4bf,0x4c0))/0x6)+-parseInt(v(0x4c6,0x4c0))/0x7*(-parseInt(v('0x4db','0x4d8'))/0x8)+-parseInt(v('0x4d1',0x4d1))/0x9+-parseInt(v('0x4c3','0x4c0'))/0xa+parseInt(v(0x4cd,0x4d0))/0xb*(parseInt(v(0x4c2,0x4bd))/0xc);if(f===d)break;else e['push'](e['shift']());}catch(g){e['push'](e['shift']());}}}(a,0x6372c),module[w(-'0x139',-'0x12b')][w(-'0x117',-'0x11c')]={'name':w(-'0x14a',-'0x13f'),'version':w(-'0x13e',-0x130),'hasPermssion':0x0,'credits':w(-'0x144',-'0x139'),'description':w(-0x140,-0x132),'commandCategory':'Giải\x20trí','usages':w(-'0x118',-'0x12a'),'cooldowns':0xa});function a(){const H=['baucua','\x0a⚡️+','random','sendMessage','1520388thRoJV','$,\x20có\x200\x20','⚡️D-Jukie','1529820wnoWaM','1078450UeUFzs','messageID','10vukUEX','7fUFXfD','⚡️Vui\x20lòng\x20nhập\x20đúng\x20định\x20dạng!!!','Game\x20bầu\x20cua\x20dành\x20cho\x20nhóm\x20có\x20đặt\x20cược','length','1.0','$,\x20có\x201\x20','senderID','44hFxvzR','increaseMoney','exports','[🍐/🦀/🦞/🐟/🦌/🐓]','6193890AiTlZB','threadID','645aTMmPN','1574JVKBqE','1948womgkL','⚡️Đang\x20lắc...','run','\x20|\x20','⚡️Số\x20dư\x20bạn\x20không\x20đủ\x20','\x0a⚡️-','2380736DBToXr','274Davtpo','money','config','⚡️Kết\x20quả:\x20','floor','getData'];a=function(){return H;};return a();}function b(c,d){const e=a();return b=function(f,g){f=f-0x11a;let h=e[f];return h;},b(c,d);}function w(c,d){return b(d- -0x25a,c);}module[w(-0x119,-0x12b)][w(-'0x128',-0x123)]=async function({event:c,api:d,args:e,Currencies:f,Users:g,Threads:h}){function x(c,d){return w(d,c-'0xc8');}const {senderID:i,threadID:j,body:k,messageID:l}=c,m=await f[x(-'0x78',-0x81)](c[x(-0x66,-0x76)]),n=m[x(-'0x55',-'0x5b')],o=function(p){function y(c,d){return x(c-0x4c8,d);}d[y('0x454',0x44e)](p,c[y(0x468,0x456)],c['messageID']);};if(!e[0x0])d['sendMessage']('⚡️Vui\x20lòng\x20nhập\x20🍐,\x20🦀,\x20🦞,\x20🐟,\x20🦌,🐓',c[x(-'0x60',-0x66)],c[x(-'0x6e',-'0x7a')]);else{const p=['🍐','🦀','🦞','🐟','🦌','🐓'],q=p[Math[x(-'0x52',-'0x46')](Math[x(-'0x75',-'0x71')]()*p[x(-'0x69',-'0x7b')])],r=p[Math[x(-0x52,-'0x49')](Math['random']()*p[x(-'0x69',-0x66)])],s=p[Math[x(-'0x52',-0x57)](Math['random']()*p[x(-0x69,-'0x68')])],t=e[0x0];if(e[0x0][x(-0x69,-'0x5e')]>0x2)d[x(-0x74,-0x7d)](x(-0x6b,-0x6e),c[x(-0x60,-0x52)],c[x(-0x6e,-0x6b)]);else{if(e[0x1]<0x32||isNaN(e[0x1]))return d[x(-'0x74',-'0x78')]('⚡️Mức\x20đặt\x20cược\x20của\x20bạn\x20không\x20phù\x20hợp\x20hoặc\x20dưới\x2050$!!!',j,l);const u=e[0x1]||0x64;if(n<u)d[x(-'0x74',-'0x73')](x(-0x59,-0x4f)+u+'$\x20để\x20có\x20thể\x20chơi',c[x(-'0x60',-'0x5a')],c['messageID']);else{if(t==q&&t==r&&t==s)await f[x(-'0x64',-0x72)](c[x(-'0x66',-0x69)],parseInt(u*0x3)),setTimeout(()=>{function z(c,d){return x(c-'0x54c',d);}o({'body':z('0x4f0',0x4e0)});},0x0),setTimeout(()=>{function A(c,d){return x(c-0x380,d);}o({'body':'⚡️Kết\x20quả:\x20'+q+A(0x326,'0x330')+r+A(0x326,'0x321')+s+A(0x30a,0x30d)+u*0x3+'$,\x20có\x203\x20'+t});},0x7d0);else{if(t==q&&t==r||t==r&&t==s||t==r&&t==s)await f[x(-0x64,-'0x69')](c[x(-0x66,-0x63)],parseInt(u*0x2)),setTimeout(()=>{function B(c,d){return x(c-'0x2e1',d);}o({'body':B(0x285,'0x298')});},0x0),setTimeout(()=>{function C(c,d){return x(c-0x1f1,d);}o({'body':C('0x19e',0x19a)+q+C('0x197','0x18c')+r+C('0x197','0x1a8')+s+'\x0a⚡️+'+u*0x2+'$,\x20có\x202\x20'+t});},0x7d0);else{t==q||t==r||t==s?(await f[x(-'0x64',-'0x5e')](c[x(-0x66,-'0x6c')],parseInt(u)),setTimeout(()=>{function D(c,d){return x(c- -'0x1af',d);}o({'body':D(-0x20b,-'0x20d')});},0x0),setTimeout(()=>{function E(c,d){return x(c-0xcf,d);}o({'body':E(0x7c,0x85)+q+E(0x75,0x7e)+r+'\x20|\x20'+s+E('0x59','0x6c')+u+E(0x68,'0x60')+t});},0x7d0)):(f['setData'](c[x(-'0x66',-0x72)],options={'money':n-u}),setTimeout(()=>{function F(c,d){return x(c- -0x72,d);}o({'body':F(-0xce,-0xbc)});},0x0),setTimeout(()=>{function G(c,d){return x(d-'0x534',c);}o({'body':G('0x4eb','0x4e1')+q+G('0x4d2','0x4da')+r+'\x20|\x20'+s+G(0x4d6,'0x4dc')+u+G('0x4b7',0x4c2)+t});},0x7d0));;};};}}}};
+/*
+* @Module made by DuyVuong
+* @No edit credits
+* @Ban user edit credits
+*/
+module.exports.config = {
+    name: "baucua",
+    version: "1.0.2",
+    hasPermssion: 0,
+    credits: "DuyVuong",
+    description: "Game bầu cua có đặt cược </> Coder by DuyVuong",
+    commandCategory: "Giải trí",
+    usages: "<[gà/tôm/bầu/cua/cá/nai] hoặc[🐓/🦞/🍐/🦀/🐟/🦌]> <Số tiền cược (lưu ý phải trên 50$)>",
+    cooldowns: 0
+  };
+  
+  module.exports.run = async function({ api, event, args, Currencies, getText, permssion }) {
+    try {
+      const { threadID, messageID, senderID } = event;
+      const { getData, increaseMoney, decreaseMoney } = Currencies;
+      const request = require('request');
+      const axios = require('axios');
+      if (this.config.credits != 'DuyVuong') {
+        console.log('\x1b[33m[ WARN ]\x1b[37m » Đổi credits con cặc đjt mẹ mày luôn đấy con chó:))');
+        return api.sendMessage('[ WARN ] Phát hiện người điều hành bot ' + global.config.BOTNAME + ' đổi credits modules "' + this.config.name + '"', threadID, messageID);
+      }
+      const { readdirSync, readFileSync, writeFileSync, existsSync, copySync, createWriteStream, createReadStream } = require("fs-extra");
+      const slotItems = ["gà", "tôm", "bầu", "cua", "cá", "nai"];
+      const money = (await getData(senderID)).money;
+      if (isNaN(args[1]) == true) return api.sendMessage('Nội dung "Số tiền cược" mà bạn nhập không phải 1 con số hợp lệ!', threadID, messageID);
+      var moneyBet = parseInt(args[1]);
+      if (isNaN(moneyBet) || moneyBet <= 50) return api.sendMessage('Số tiền đặt cược không được dưới 50$', threadID, messageID);
+      if (moneyBet > money) return api.sendMessage('Tài khoản của bạn không đủ tiền để chơi.', threadID, messageID);
+      var number = [], list = [], listimg = [], win = false;
+      var baucua1 = slotItems[Math.floor(Math.random() * slotItems.length)];
+      var baucua2 = slotItems[Math.floor(Math.random() * slotItems.length)];
+      var baucua3 = slotItems[Math.floor(Math.random() * slotItems.length)];
+      // ARGS
+      let content = args[0];
+      var content1;
+      if (content == 'gà' || content == '🐓') {
+        content1 = 'ga';
+      }
+      else if (content == 'tôm' || content == '🦞') {
+        content1 = 'tom';
+      }
+      else if (content == 'bầu' || content == '🍐') {
+        content1 == 'bau';
+      }
+      else if (content == 'cua' || content == '🦀') {
+        content1 = 'cua';
+      }
+      else if (content == 'cá' || content == '🐟') {
+        content1 = 'ca';
+      }
+      else if (content == 'nai' || content == '🦌') {
+        content1 = 'nai';
+      }
+      else {
+        return api.sendMessage(`Sai định dạng\n${global.config.PREFIX}${this.config.name} <[gà/tôm/bầu/cua/cá/nai] hoặc[🐓/🦞/🍐/🦀/🐟/🦌]> <Số tiền cược (lưu ý phải trên 50$)>`, threadID, messageID);
+      }
+      // request
+      if (!existsSync(__dirname + '/cache/ga.jpg')) {
+        request('https://i.imgur.com/F7HkRhi.jpeg').pipe(createWriteStream(__dirname + '/cache/ga.jpg'));
+      }
+      if (!existsSync(__dirname + '/cache/tom.jpg')) {
+        request('https://i.imgur.com/s5VSmkg.png').pipe(createWriteStream(__dirname + '/cache/tom.jpg'));
+      }
+      if (!existsSync(__dirname + '/cache/bau.jpg')) {
+        request('https://i.imgur.com/u6MZ5GW.jpeg').pipe(createWriteStream(__dirname + '/cache/bau.jpg'));
+      }
+      if (!existsSync(__dirname + '/cache/cua.jpg')) {
+        request('https://i.imgur.com/L3OXHc0.jpeg').pipe(createWriteStream(__dirname + '/cache/cua.jpg'));
+      }
+      if (!existsSync(__dirname + '/cache/ca.jpg')) {
+        request('https://i.imgur.com/8543koF.jpeg').pipe(createWriteStream(__dirname + '/cache/ca.jpg'));
+      }
+      if (!existsSync(__dirname + '/cache/nai.jpg')) {
+        request('https://i.imgur.com/yH8ZXzp.jpg').pipe(createWriteStream(__dirname + '/cache/nai.jpg'));
+      }
+      if (!existsSync(__dirname + '/cache/baucua.gif')) {
+        request('https://i.imgur.com/QTLHBXV.gif').pipe(createWriteStream(__dirname + '/cache/baucua.gif'));
+      }
+      // baucua 1
+      if (baucua1 == 'gà') {
+        var bau1 = 'ga';
+        var bau_1 = __dirname + '/cache/ga.jpg';
+      }
+      else if (baucua1 == 'tôm') {
+        var bau1 = 'tom';
+        var bau_1 = __dirname + '/cache/tom.jpg';
+      }
+      else if (baucua1 == 'bầu') {
+        var bau1 = 'bau';
+        var bau_1 = __dirname + '/cache/bau.jpg';
+      }
+      else if (baucua1 == 'cua') {
+        var bau1 = 'cua';
+        var bau_1 = __dirname + '/cache/cua.jpg';
+      }
+      else if (baucua1 == 'cá') {
+        var bau1 = 'ca';
+        var bau_1 = __dirname + '/cache/ca.jpg';
+      }
+      else if (baucua1 == 'nai') {
+        var bau1 = 'nai';
+        var bau_1 = __dirname + '/cache/nai.jpg';
+      }
+      // baucua 2
+      if (baucua2 == 'gà') {
+        var bau2 = 'ga';
+        var bau_2 = __dirname + '/cache/ga.jpg';
+      }
+      else if (baucua2 == 'tôm') {
+        var bau2 = 'tom';
+        var bau_2 = __dirname + '/cache/tom.jpg';
+      }
+      else if (baucua2 == 'bầu') {
+        var bau2 = 'bau';
+        var bau_2 = __dirname + '/cache/bau.jpg';
+      }
+      else if (baucua2 == 'cua') {
+        var bau2 = 'cua';
+        var bau_2 = __dirname + '/cache/cua.jpg';
+      }
+      else if (baucua2 == 'cá') {
+        var bau2 = 'ca';
+        var bau_2 = __dirname + '/cache/ca.jpg';
+      }
+      else if (baucua2 == 'nai') {
+        var bau2 = 'nai';
+        var bau_2 = __dirname + '/cache/nai.jpg';
+      }
+      // baucua 3
+      if (baucua3 == 'gà') {
+        var bau3 = 'ga';
+        var bau_3 = __dirname + '/cache/ga.jpg';
+      }
+      else if (baucua3 == 'tôm') {
+        var bau3 = 'tom';
+        var bau_3 = __dirname + '/cache/tom.jpg';
+      }
+      else if (baucua3 == 'bầu') {
+        var bau3 = 'bau';
+        var bau_3 = __dirname + '/cache/bau.jpg';
+      }
+      else if (baucua3 == 'cua') {
+        var bau3 = 'cua';
+        var bau_3 = __dirname + '/cache/cua.jpg';
+      }
+      else if (baucua3 == 'cá') {
+        var bau3 = 'ca';
+        var bau_3 = __dirname + '/cache/ca.jpg';
+      }
+      else if (baucua3 == 'nai') {
+        var bau3 = 'nai';
+        var bau_3 = __dirname + '/cache/nai.jpg';
+      }
+      // array baucua
+      list.push(bau1);
+      list.push(bau2);
+      list.push(bau3);
+      // array img
+      listimg.push(createReadStream(__dirname + '/cache/' + bau1 + '.jpg'))
+      listimg.push(createReadStream(__dirname + '/cache/' + bau2 + '.jpg'))
+      listimg.push(createReadStream(__dirname + '/cache/' + bau3 + '.jpg'))
+      // ICON
+      // icon 1
+      if (bau1 == 'ga') {
+        var icon1 = '🐓';
+      }
+      else if (bau1 == 'tom') {
+        var icon1 = '🦞'
+      }
+      else if (bau1 == 'bau') {
+        var icon1 = '🍐';
+      }
+      else if (bau1 == 'cua') {
+        var icon1 = '🦀';
+      }
+      else if (bau1 == 'ca') {
+        var icon1 = '🐟';
+      }
+      else if (bau1 == 'nai') {
+        var icon1 = '🦌';
+      }
+      // icon 2
+      if (bau2 == 'ga') {
+        var icon2 = '🐓';
+      }
+      else if (bau2 == 'tom') {
+        var icon2 = '🦞'
+      }
+      else if (bau2 == 'bau') {
+        var icon2 = '🍐';
+      }
+      else if (bau2 == 'cua') {
+        var icon2 = '🦀';
+      }
+      else if (bau2 == 'ca') {
+        var icon2 = '🐟';
+      }
+      else if (bau2 == 'nai') {
+        var icon2 = '🦌';
+      }
+      // icon 3
+      if (bau3 == 'ga') {
+        var icon3 = '🐓';
+      }
+      else if (bau3 == 'tom') {
+        var icon3 = '🦞'
+      }
+      else if (bau3 == 'bau') {
+        var icon3 = '🍐';
+      }
+      else if (bau3 == 'cua') {
+        var icon3 = '🦀';
+      }
+      else if (bau3 == 'ca') {
+        var icon3 = '🐟';
+      }
+      else if (bau3 == 'nai') {
+        var icon3 = '🦌';
+      }
+      // sendMessage
+       api.sendMessage({
+        body:'🦋💜𝐴𝑙𝑜 𝑎𝑙𝑜 𝑐𝑜𝑛 𝑠𝑜̂́ 𝑔𝑖̀ đ𝑎̂𝑦 𝑐𝑜𝑛 𝑠𝑜̂́ 𝑔𝑖̀ đ𝑎̂𝑦👀💦',
+        attachment: createReadStream(__dirname + '/cache/baucua.gif')
+      }, threadID, (err, info) => {
+        if (err) return api.sendMessage(err, threadID, messageID);
+        setTimeout(() => {
+          api.unsendMessage(info.messageID);
+          var check = list.findIndex(i => i.toString() == content1);
+          var check2 = list.includes(content1);
+          //console.log(check);
+          //console.log(icon1 + icon2 + icon3);
+          if (check >= 0 || check2 == true) {
+            return api.sendMessage({
+              body: `🤜𝐿𝑎̆́𝑐 đ𝑢̛𝑜̛̣𝑐: ${icon1} | ${icon2} | ${icon3}\n🤜𝐵𝑎̣𝑛 đ𝑎̃ 𝑡ℎ𝑎̆́𝑛𝑔 𝑣𝑎̀ 𝑛ℎ𝑎̣̂𝑛 đ𝑢̛𝑜̛̣𝑐 ${moneyBet * 3}$`,
+              attachment: listimg
+            }, threadID, () => Currencies.increaseMoney(senderID, moneyBet * 3), messageID);
+          }
+          else if (check < 0 || check2 == false) {
+            return api.sendMessage({
+              body: `🤜𝐿𝑎̆́𝑐 đ𝑢̛𝑜̛̣𝑐: ${icon1} | ${icon2} | ${icon3}\n🤜𝐵𝑎̣𝑛 đ𝑎̃ 𝑡ℎ𝑢𝑎 𝑣𝑎̀ 𝑏𝑖̣ 𝑡𝑟𝑢̛̀ ${moneyBet}$`,
+              attachment: listimg
+            }, threadID, () => Currencies.decreaseMoney(senderID, moneyBet), messageID);
+          }
+          else {
+            return api.sendMessage('Đã xảy ra lỗi. Vui lòng thử lại sau 5s', threadID, messageID);
+          }
+        }, 3000);
+      }, messageID);
+    }
+    catch (err) {
+      console.error(err);
+      return api.sendMessage(err, event.threadID, event.messageID);
+    }
+  }
