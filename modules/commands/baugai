@@ -1,0 +1,257 @@
+/*
+Không thay credit nha mấy má
+*/
+module.exports.config = {
+    name: "baugai",
+    version: "1.0.2",
+    hasPermssion: 0,
+    credits: "Minh Vu",
+    description: "Game bầu gái giống bầu cua",
+    commandCategory: "Giải trí",
+    usages: "<[ngocnhi/quynhalee/lebong/khanhhuyen/thuyduong/khanhlinh] hoặc [🐓/🦞/🍐/🦀/🐟/🦌]",
+    cooldowns: 0
+  };
+  
+  module.exports.run = async function({ api, event, args, Currencies, getText, permssion }) {
+    try {
+      const { threadID, messageID, senderID } = event;
+      const { getData, increaseMoney, decreaseMoney } = Currencies;
+      const request = require('request');
+      const axios = require('axios');
+      if (this.config.credits != 'Minh Vu') {
+        console.log('\x1b[ WARN ]\x1b[» Đổi credit con cặc bố mày à :)');
+        return api.sendMessage('[ WARN ] Phát hiện người điều hành bot ' + global.config.BOTNAME + ' đổi credits modules "' + this.config.name + '"', threadID, messageID);
+      }
+      const { readdirSync, readFileSync, writeFileSync, existsSync, copySync, createWriteStream, createReadStream } = require("fs-extra");
+      const slotItems = ["ngocnhi", "quynhalee", "lebong", "khanhhuyen", "thuyduong", "khanhlinh"];
+      const money = (await getData(senderID)).money;
+      if (isNaN(args[1]) == true) return api.sendMessage('Vui lòng nhập [ngocnhi/quynhalee/lebong/khanhhuyen/thuyduong/khanhlinh] + [Số tiền đặt cược]', threadID, messageID);
+      var moneyBet = parseInt(args[1]);
+      if (isNaN(moneyBet) || moneyBet <= 50) return api.sendMessage('Số tiền đặt cược không được dưới 50$', threadID, messageID);
+      if (moneyBet > money) return api.sendMessage('Số của bạn không đủ tiền để chơi.', threadID, messageID);
+      var number = [], list = [], listimg = [], win = false;
+      var baucua1 = slotItems[Math.floor(Math.random() * slotItems.length)];
+      var baucua2 = slotItems[Math.floor(Math.random() * slotItems.length)];
+      var baucua3 = slotItems[Math.floor(Math.random() * slotItems.length)];
+      // ARGS
+      let content = args[0];
+      var content1;
+      if (content == 'ngocnhi' || content == '🐓') {
+        content1 = 'ngocnhi';
+      }
+      else if (content == 'quynhalee' || content == '🦞') {
+        content1 = 'quynhalee';
+      }
+      else if (content == 'lebong' || content == '🍐') {
+        content1 == 'lebong';
+      }
+      else if (content == 'khanhhuyen' || content == '🦀') {
+        content1 = 'khanhhuyen';
+      }
+      else if (content == 'thuyduong' || content == '🐟') {
+        content1 = 'thuyduong';
+      }
+      else if (content == 'khanhlinh' || content == '🦌') {
+        content1 = 'khanhlinh';
+      }
+      else {
+        return api.sendMessage(`Sai định dạng\n${global.config.PREFIX}${this.config.name} <[ngocnhi/quynhalee/lebong/khanhhuyen/thuyduong/khanhlinh] hoặc[🐓/🦞/🍐/🦀/🐟/🦌]> <Số tiền cược (lưu ý phải trên 50$)>`, threadID, messageID);
+      }
+      // request
+      if (!existsSync(__dirname + '/cache/ngocnhi.jpg')) {
+        request('https://i.imgur.com/H9MZOr5.jpeg').pipe(createWriteStream(__dirname + '/cache/ngocnhi.jpg'));
+      }
+      if (!existsSync(__dirname + '/cache/quynhalee.jpg')) {
+        request('https://i.imgur.com/L772hk9.jpeg').pipe(createWriteStream(__dirname + '/cache/quynhalee.jpg'));
+      }
+      if (!existsSync(__dirname + '/cache/lebong.jpg')) {
+        request('https://i.imgur.com/3NNiYSz.jpeg').pipe(createWriteStream(__dirname + '/cache/lebong.jpg'));
+      }
+      if (!existsSync(__dirname + '/cache/khanhhuyen.jpg')) {
+        request('https://i.imgur.com/vZX94o7.jpeg').pipe(createWriteStream(__dirname + '/cache/khanhhuyen.jpg'));
+      }
+      if (!existsSync(__dirname + '/cache/thuyduong.jpg')) {
+        request('https://i.imgur.com/NAMV7Xv.jpeg').pipe(createWriteStream(__dirname + '/cache/thuyduong.jpg'));
+      }
+      if (!existsSync(__dirname + '/cache/khanhlinh.jpg')) {
+        request('https://i.imgur.com/3csBcch.jpeg').pipe(createWriteStream(__dirname + '/cache/khanhlinh.jpg'));
+      }
+      if (!existsSync(__dirname + '/cache/baugai.gif')) {
+        request('https://i.imgflip.com/5wgpts.gif').pipe(createWriteStream(__dirname + '/cache/baugai.gif'));
+      }
+      // baucua 1
+      if (baucua1 == 'ngocnhi') {
+        var bau1 = 'ngocnhi';
+        var bau_1 = __dirname + '/cache/ngocnhi.jpg';
+      }
+      else if (baucua1 == 'quynhalee') {
+        var bau1 = 'quynhalee';
+        var bau_1 = __dirname + '/cache/quynhalee.jpg';
+      }
+      else if (baucua1 == 'lebong') {
+        var bau1 = 'lebong';
+        var bau_1 = __dirname + '/cache/lebong.jpg';
+      }
+      else if (baucua1 == 'khanhhuyen') {
+        var bau1 = 'khanhhuyen';
+        var bau_1 = __dirname + '/cache/khanhhuyen.jpg';
+      }
+      else if (baucua1 == 'thuyduong') {
+        var bau1 = 'thuyduong';
+        var bau_1 = __dirname + '/cache/thuyduong.jpg';
+      }
+      else if (baucua1 == 'khanhlinh') {
+        var bau1 = 'khanhlinh';
+        var bau_1 = __dirname + '/cache/khanhlinh.jpg';
+      }
+      // baucua 2
+      if (baucua2 == 'ngocnhi') {
+        var bau2 = 'ngocnhi';
+        var bau_2 = __dirname + '/cache/ngocnhi.jpg';
+      }
+      else if (baucua2 == 'quynhalee') {
+        var bau2 = 'quynhalee';
+        var bau_2 = __dirname + '/cache/quynhalee.jpg';
+      }
+      else if (baucua2 == 'lebong') {
+        var bau2 = 'lebong';
+        var bau_2 = __dirname + '/cache/lebong.jpg';
+      }
+      else if (baucua2 == 'khanhhuyen') {
+        var bau2 = 'khanhhuyen';
+        var bau_2 = __dirname + '/cache/khanhhuyen.jpg';
+      }
+      else if (baucua2 == 'thuyduong') {
+        var bau2 = 'thuyduong';
+        var bau_2 = __dirname + '/cache/thuyduong.jpg';
+      }
+      else if (baucua2 == 'khanhlinh') {
+        var bau2 = 'khanhlinh';
+        var bau_2 = __dirname + '/cache/khanhlinh.jpg';
+      }
+      // baucua 3
+      if (baucua3 == 'ngocnhi') {
+        var bau3 = 'ngocnhi';
+        var bau_3 = __dirname + '/cache/ngocnhi.jpg';
+      }
+      else if (baucua3 == 'quynhalee') {
+        var bau3 = 'quynhalee';
+        var bau_3 = __dirname + '/cache/quynhalee.jpg';
+      }
+      else if (baucua3 == 'lebong') {
+        var bau3 = 'lebong';
+        var bau_3 = __dirname + '/cache/lebong.jpg';
+      }
+      else if (baucua3 == 'khanhhuyen') {
+        var bau3 = 'khanhhuyen';
+        var bau_3 = __dirname + '/cache/khanhhuyen.jpg';
+      }
+      else if (baucua3 == 'thuyduong') {
+        var bau3 = 'thuyduong';
+        var bau_3 = __dirname + '/cache/thuyduong.jpg';
+      }
+      else if (baucua3 == 'khanhlinh') {
+        var bau3 = 'khanhlinh';
+        var bau_3 = __dirname + '/cache/khanhlinh.jpg';
+      }
+      // array baucua
+      list.push(bau1);
+      list.push(bau2);
+      list.push(bau3);
+      // array img
+      listimg.push(createReadStream(__dirname + '/cache/' + bau1 + '.jpg'))
+      listimg.push(createReadStream(__dirname + '/cache/' + bau2 + '.jpg'))
+      listimg.push(createReadStream(__dirname + '/cache/' + bau3 + '.jpg'))
+      // ICON
+      // icon 1
+      if (bau1 == 'ngocnhi') {
+        var icon1 = '🐓';
+      }
+      else if (bau1 == 'quynhalee') {
+        var icon1 = '🦞'
+      }
+      else if (bau1 == 'lebong') {
+        var icon1 = '🍐';
+      }
+      else if (bau1 == 'khanhhuyen') {
+        var icon1 = '🦀';
+      }
+      else if (bau1 == 'thuyduong') {
+        var icon1 = '🐟';
+      }
+      else if (bau1 == 'khanhlinh') {
+        var icon1 = '🦌';
+      }
+      // icon 2
+      if (bau2 == 'ngocnhi') {
+        var icon2 = '🐓';
+      }
+      else if (bau2 == 'quynhalee') {
+        var icon2 = '🦞'
+      }
+      else if (bau2 == 'lebong') {
+        var icon2 = '🍐';
+      }
+      else if (bau2 == 'khanhhuyen') {
+        var icon2 = '🦀';
+      }
+      else if (bau2 == 'thuyduong') {
+        var icon2 = '🐟';
+      }
+      else if (bau2 == 'khanhlinh') {
+        var icon2 = '🦌';
+      }
+      // icon 3
+      if (bau3 == 'ngocnhi') {
+        var icon3 = '🐓';
+      }
+      else if (bau3 == 'quynhalee') {
+        var icon3 = '🦞'
+      }
+      else if (bau3 == 'lebong') {
+        var icon3 = '🍐';
+      }
+      else if (bau3 == 'khanhhuyen') {
+        var icon3 = '🦀';
+      }
+      else if (bau3 == 'thuyduong') {
+        var icon3 = '🐟';
+      }
+      else if (bau3 == 'khanhlinh') {
+        var icon3 = '🦌';
+      }
+      // sendMessage
+      api.sendMessage({
+        body:'🦋💜𝐴𝑙𝑜 𝑎𝑙𝑜 𝑐𝑜𝑛 𝑠𝑜̂́ 𝑔𝑖̀ đ𝑎̂𝑦 𝑐𝑜𝑛 𝑠𝑜̂́ 𝑔𝑖̀ đ𝑎̂𝑦👀💦',
+        attachment: createReadStream(__dirname + '/cache/baugai.gif')
+      }, threadID, (err, info) => {
+        if (err) return api.sendMessage(err, threadID, messageID);
+        setTimeout(() => {
+          api.unsendMessage(info.messageID);
+          var check = list.findIndex(i => i.toString() == content1);
+          var check2 = list.includes(content1);
+          //console.log(check);
+          //console.log(icon1 + icon2 + icon3);
+          if (check >= 0 || check2 == true) {
+            return api.sendMessage({
+              body: `🤜𝐿𝑎̆́𝑐 đ𝑢̛𝑜̛̣𝑐: ${icon1} | ${icon2} | ${icon3}\n🤜𝐵𝑎̣𝑛 đ𝑎̃ 𝑡ℎ𝑎̆́𝑛𝑔 𝑣𝑎̀ 𝑛ℎ𝑎̣̂𝑛 đ𝑢̛𝑜̛̣𝑐 ${moneyBet * 3}$`,
+              attachment: listimg
+            }, threadID, () => Currencies.increaseMoney(senderID, moneyBet * 3), messageID);
+          }
+          else if (check < 0 || check2 == false) {
+            return api.sendMessage({
+              body: `🤜𝐿𝑎̆́𝑐 đ𝑢̛𝑜̛̣𝑐: ${icon1} | ${icon2} | ${icon3}\n🤜𝐵𝑎̣𝑛 đ𝑎̃ 𝑡ℎ𝑢𝑎 𝑣𝑎̀ 𝑏𝑖̣ 𝑡𝑟𝑢̛̀ ${moneyBet}$`,
+              attachment: listimg
+            }, threadID, () => Currencies.decreaseMoney(senderID, moneyBet), messageID);
+          }
+          else {
+            return api.sendMessage('Đã xảy ra lỗi. Vui lòng thử lại sau 5s', threadID, messageID);
+          }
+        }, 3000);
+      }, messageID);
+    }
+    catch (err) {
+      console.error(err);
+      return api.sendMessage(err, event.threadID, event.messageID);
+    }
+  }
